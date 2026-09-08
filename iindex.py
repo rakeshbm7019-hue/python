@@ -1,6 +1,5 @@
 import asyncio
 import random
-
 async def sensor_stream(n):
     for i in range(n):
         await asyncio.sleep(0.5)  # simulate delay
