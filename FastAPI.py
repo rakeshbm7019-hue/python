@@ -5,6 +5,9 @@ app = FastAPI()
 
 # Define a request body model
 class Item(BaseModel):
+
+
+    
     name: str
     price: float
     in_stock: bool
