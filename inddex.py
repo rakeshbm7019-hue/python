@@ -8,6 +8,8 @@ async def fetch_data(n):
     return f"Result {n}"
 
 async def main():
+
+    
     tasks = [fetch_data(i) for i in range(1, 6)]
     results = await asyncio.gather(*tasks)
     print("All results:", results)
