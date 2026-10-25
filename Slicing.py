@@ -14,6 +14,10 @@ squares = [n**2 for n in numbers]
 print(squares)
 
 odds = [n for n in numbers if n % 2 != 0]
+
+
+
+
 print(odds)
 
 print(max(numbers))   
