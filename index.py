@@ -18,6 +18,9 @@ def cache_results(func):
 
 @cache_results
 def expensive_computation(x, y):
+
+
+    
     time.sleep(2)  # simulate heavy work
     return x ** y
 
