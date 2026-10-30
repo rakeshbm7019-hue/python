@@ -4,6 +4,7 @@ def longest_increasing_subsequence(nums):
     @lru_cache(None)
     def lis_ending_at(i):
         best = 1
+        
         for j in range(i):
             if nums[j] < nums[i]:
                 best = max(best, lis_ending_at(j) + 1)
