@@ -21,6 +21,7 @@ def consumer(queue, pool):
     while True:
         task = queue.get()
         if task is None:
+            
             break
         tasks.append(pool.apply_async(worker, (task,)))
     for t in tasks:
