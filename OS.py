@@ -7,6 +7,7 @@ def zip_text_files(directory, output_zip):
             for file in files:
                 if file.endswith(".txt"):
                     
+                    
                     filepath = os.path.join(root, file)
                     zipf.write(filepath, arcname=file)
                     print(f"Added {file} to archive")
